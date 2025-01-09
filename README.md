@@ -1,6 +1,8 @@
 # Traveling-Salesperson-Circle-Heuristic
 
-This repository showcases progressive attempts at creating algorithmic solutions to the Traveling Salesperson Problem (TSP) using Python. The underlying idea combines human intuition—drawing a circle to approximate the problem—with computational power to refine the circle into (hopefully) a global minimum. While this approach is unlikely to prove P = NP formally, the probabilistic shuffling method aims to produce high-quality approximations. By leveraging the geometric properties of a circle, which maximizes the area-to-perimeter ratio, this algorithm narrows the phase space, eliminating many invalid solutions with crossovers. If successful, this heuristic may significantly reduce the time needed to find excellent approximations, particularly for higher-dimensional datasets where circles generalize to spheres and hyperspheres.
+This repository showcases progressive attempts at creating algorithmic solutions to the Traveling Salesperson Problem (TSP) using Python. 
+The underlying idea combines human intuition—drawing a circle to approximate the problem—with computational power to refine the circle into (hopefully) a global minimum. While this approach is unlikely to prove P = NP formally, the probabilistic shuffling method aims to produce high-quality approximations. By leveraging the geometric properties of a circle, which maximizes the area-to-perimeter ratio, this algorithm narrows the phase space, eliminating many invalid solutions with crossovers. 
+If successful, this heuristic may significantly reduce the time needed to find excellent approximations, particularly for higher-dimensional datasets where circles generalize to spheres and hyperspheres.
 
 
 
