@@ -5,7 +5,7 @@ The underlying idea combines human intuition—drawing a circle to approximate t
 
 If successful, this heuristic may significantly reduce the time needed to find excellent approximations, particularly for higher-dimensional datasets where circles generalize to spheres, hyperspheres, etc.
 
-TSP5 Overview
+## TSP5 Overview
 
 TSP5 implements a heuristic approach to solving the Traveling Salesperson Problem (TSP). This version integrates multiple strategies, including geometric heuristics, angular sweeps, and path optimization, to approximate efficient solutions. Key features include:
 
