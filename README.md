@@ -2,7 +2,7 @@
 
 This repository showcases progressive attempts at creating algorithmic solutions to the Traveling Salesperson Problem (TSP) using Python. 
 
-The underlying idea combines human intuition—drawing a circle to approximate the solution—with computational power to refine the circle into (hopefully) a global minimum. While this approach is unlikely to prove P = NP formally, this heuristic beginning plus probabilistic shuffling ending aims to produce high-quality approximations. By leveraging the geometric properties of a circle, which maximizes the area-to-perimeter ratio, this algorithm, like a human, first tries to narrow the phase space by eliminating many invalid solutions with crossovers. Then looks to utilize the processing power of a computer to find the smallest perimeter circle via a method like 2-opt.
+The underlying idea combines human intuition—drawing a circle to approximate the solution—with computational power to refine the circle into (hopefully) a global minimum. While this approach is unlikely to prove P = NP formally, this heuristic beginning plus probabilistic shuffling ending aims to produce high-quality approximations. By leveraging the geometric properties of a circle, which maximizes the area-to-perimeter ratio, this algorithm, like a human, first tries to narrow the phase space by eliminating many invalid solutions with crossovers. It then leverages computational power to refine this approximation and find the smallest perimeter path using methods like 2-opt.
 
 If successful, this heuristic may significantly reduce the time needed to find excellent approximations, particularly for higher-dimensional datasets where circles generalize to spheres and hyperspheres.
 
@@ -47,26 +47,26 @@ If successful, this heuristic may significantly reduce the time needed to find e
 
 ---
 
-## Eventual Core Functionality
+## Core Functionality Goals
+
+This project is a work in progress, with the following features either implemented or under active development:
 
 ### Geometric Heuristic
-Uses angular alignment and distance weighting to prioritize city selection, avoiding crossovers.
+- Uses angular alignment and distance weighting to prioritize city selection, avoiding crossovers.
 
-### 2-Opt Optimization
-Implements the 2-opt algorithm to iteratively improve the generated path by removing crossovers.
+### 2-opt Optimization
+- Implements the 2-opt algorithm to iteratively improve the generated path by removing crossovers.
+- Current limitation: Crossovers are not yet fully eliminated in some cases, requiring further refinement.
 
 ### Visualization
-Uses `matplotlib` to create visual representations of:
-   - The generated tour.
-   - The optimized tour.
-   - The optimal tour (if available).
+- Visualizes generated, optimized, and (if available) optimal tours using `matplotlib`.
 
 ---
 
 ## How to Run
 
 1. Clone the repository
-   - `git clone https://github.com/your-username/Traveling-Salesperson-Circle-Heuristic.git`
+   - `git clone https://github.com/PlancksEpoch/Traveling-Salesperson-Circle-Heuristic/tree/main`
    - `cd Traveling-Salesperson-Circle-Heuristic`
 2. Place your `.tsp` file (e.g., `berlin52.tsp`) in the project directory.
 3. Run the script: `python TSP5.py`
